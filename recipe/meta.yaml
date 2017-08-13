@@ -1,6 +1,6 @@
 {% set name = "path.py" %}
-{% set version = "8.2.1" %}
-{% set checksum = "c9ad2d462a7f8d7f6f6d2b89220bd50425221e399a4b8dfe5fa6725eb26fd708" %}
+{% set version = "10.3.1" %}
+{% set checksum = "412706be1cd8ab723c77829f9aa0c4d4b7c7b26c7b1be0275a6841c3cb1001e0" %}
 
 package:
   name: {{ name }}
@@ -19,7 +19,7 @@ requirements:
   build:
     - python
     - setuptools
-    - setuptools_scm >=1.9
+    - setuptools_scm >=1.15.0
 
   run:
     - python
@@ -33,7 +33,14 @@ about:
   home: https://github.com/jaraco/path.py
   license: MIT
   summary: A module wrapper for os.path
+  description: |
+    path.py implements a path objects as first-class entities, allowing common
+    operations on files to be invoked on those path objects directly.
+  doc_url: https://pathpy.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/jaraco/path.py/blob/master/docs/index.rst
+  dev_url: https://github.com/jaraco/path.py
 
 extra:
   recipe-maintainers:
     - jakirkham
+    - nehaljwani
