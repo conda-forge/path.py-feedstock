@@ -16,14 +16,15 @@ operations on files to be invoked on those path objects directly.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/path.py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/path.py-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/path.py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/path.py-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/path.py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/path-py-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/path.py-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/path.py-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/path.py/badges/version.svg)](https://anaconda.org/conda-forge/path.py)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/path.py/badges/downloads.svg)](https://anaconda.org/conda-forge/path.py)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-path.py-green.svg)](https://anaconda.org/conda-forge/path.py) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/path.py.svg)](https://anaconda.org/conda-forge/path.py) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/path.py.svg)](https://anaconda.org/conda-forge/path.py) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/path.py.svg)](https://anaconda.org/conda-forge/path.py) |
 
 Installing path.py
 ==================
