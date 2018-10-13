@@ -1,6 +1,6 @@
 {% set name = "path.py" %}
-{% set version = "11.0.1" %}
-{% set checksum = "e7eb9d0ca4110d9b4d7c9baa0696d8c94f837d622409cefc5ec9e7c3d02ea11f" %}
+{% set version = "11.5.0" %}
+{% set checksum = "b6687a532a735a2d79a13e92bdb31cb0971abe936ea0fa78bcb47faf4372b3cb" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
@@ -24,6 +24,8 @@ requirements:
 
   run:
     - python
+    - importlib_metadata >=0.5
+    - backports.os
 
 test:
   imports:
