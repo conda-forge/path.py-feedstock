@@ -1,6 +1,6 @@
 {% set name = "path.py" %}
-{% set version = "11.5.0" %}
-{% set checksum = "b6687a532a735a2d79a13e92bdb31cb0971abe936ea0fa78bcb47faf4372b3cb" %}
+{% set version = "11.5.1" %}
+{% set checksum = "88d271b9d59f332861e72a5c48e60034e0439372629a1bd5894b0aac60902947" %}
 
 package:
   name: {{ name }}
