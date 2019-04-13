@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
     - setuptools_scm >=1.15.0
 
   run:
-    - python
+    - python >=3.5
     - importlib_metadata >=0.5
     - backports.os
 
