@@ -1,31 +1,26 @@
 {% set name = "path.py" %}
-{% set version = "12.0.2" %}
-{% set checksum = "45556ae7d59268a7d41ce5c43d53dc0fc7aab3f1028895003a8831d151a96f19" %}
+{% set version = "12.4.0" %}
+{% set checksum = "6647ca22523f5e868b110cc3d958be01aa92e662a8241e464f7416779427bf3e" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
+  # path.py is a metapackage which depends on path, source is retained here
+  # to allow to update bot to bump the version
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ checksum }}
 
 build:
-  noarch: python
+  noarch: True
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
-  host:
-    - python >=3.5
-    - pip
-    - setuptools_scm >=1.15.0
-
   run:
     - python >=3.5
-    - importlib_metadata >=0.5
-
+    - path <13.2
+    
 test:
   imports:
     - path
