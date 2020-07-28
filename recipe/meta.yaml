@@ -1,6 +1,6 @@
 {% set name = "path.py" %}
-{% set version = "12.4.0" %}
-{% set checksum = "6647ca22523f5e868b110cc3d958be01aa92e662a8241e464f7416779427bf3e" %}
+{% set version = "12.5.0" %}
+{% set checksum = "8d885e8b2497aed005703d94e0fd97943401f035e42a136810308bff034529a8" %}
 
 package:
   name: {{ name }}
@@ -13,14 +13,14 @@ source:
   sha256: {{ checksum }}
 
 build:
-  noarch: True
+  noarch: true
   number: 0
 
 requirements:
   run:
     - python >=3.5
-    - path <13.2
-    
+    - path
+
 test:
   imports:
     - path
