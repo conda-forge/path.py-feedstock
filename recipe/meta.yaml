@@ -19,7 +19,7 @@ build:
 requirements:
   run:
     - python >=3.5
-    - path <13.2
+    - path
 
 test:
   imports:
